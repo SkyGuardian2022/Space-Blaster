@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1517423772, guid: 128cacf8d21444827833827888034207, type: 3}
+  m_Name: SVStateSave
+  m_EditorClassIdentifier: 
+  conversationViewSave:
+    promptText: "using System.Collections;\nusing System.Collections.Generic;\nusing
+      UnityEngine;\n\npublic class moving_BEAN : MonoBehaviour\n{\n    public float
+      speed;\n\n    void Update()\n    {\n        float h = Input.GetAxisRaw(\"Horizontal\");\n       
+      float v = Input.getAxisRaw(\"Vertical\");\n\n        gameObject.transform.position
+      = new vector2;\n\n        transform.position.x + (hspeed);\n        transform.position.y
+      +(v speed);\n    }\n}"
+    outputText: "It seems like you're trying to move a game object in Unity using
+      the horizontal and vertical inputs. However, there are a few errors in your
+      code. Here's a corrected version:\n\n```csharp\nusing System.Collections;\nusing
+      System.Collections.Generic;\nusing UnityEngine;\n\npublic class moving_BEAN
+      : MonoBehaviour\n{\n    public float speed;\n\n    void Update()\n    {\n       
+      float h = Input.GetAxisRaw(\"Horizontal\");\n        float v = Input.GetAxisRaw(\"Vertical\");\n\n       
+      Vector2 movement = new Vector2(h, v);\n        transform.position += new Vector3(movement.x,
+      movement.y, 0) * speed * Time.deltaTime;\n    }\n}\n```\n\nIn this corrected
+      code, I've made the following changes:\n\n1. `Input.getAxisRaw(\"Vertical\")`
+      is corrected to `Input.GetAxisRaw(\"Vertical\")` (C# is case sensitive).\n2.
+      `new vector2` is corrected to `Vector2` because Unity's Transform.position
+      is a Vector3, not a Vector2. But we can use Vector2 for 2D movement and then
+      convert it to Vector3.\n3. The movement is calculated as a new Vector2 that
+      combines the horizontal and vertical inputs. This is then converted to Vector3
+      and multiplied by the speed and the time since the last frame (Time.deltaTime)
+      to make the movement smooth and frame rate independent.\n4. The calculated
+      movement is added to the current position of the transform. This moves the
+      game object."
+  actionViewSave:
+    promptText: 
+    outputText: 
+  imageViewSave:
+    promptText: 
+    imageData: 
+    saveFileName: 
+  textureViewSave:
+    promptText: 
+    imageData: 
+    saveFileName: 
+  voiceViewSave:
+    promptText: 
+    soundData: 
+    voiceSelection: Rachel
+    stabilitySelection: 0.75
+    similaritySelection: 0.75
+    saveFileName: 
+  currentView: 0

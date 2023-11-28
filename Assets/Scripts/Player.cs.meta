@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f2d951e37a600b34f9884bd3d3761748
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _bulletPrefab: {fileID: 7701125599063715571, guid: 0c4903ffcc1122b40a47efbdcf4813bd, type: 3}
+  - _TripleShotPrefab: {fileID: 6082249958100796625, guid: 02a50b629a1446746a408bca4f3880a5, type: 3}
+  - _SpeedPrefab: {fileID: 2423672075595295713, guid: bc65af54c9e7202489eb3f1fdda28b1c, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

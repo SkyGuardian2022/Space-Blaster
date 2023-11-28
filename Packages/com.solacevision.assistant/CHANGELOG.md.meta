@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7e46f5f3cc0024e89935ea9c14fd3ebb
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 257989
+  packageName: 'Solace AI: GPT AI Tools'
+  packageVersion: 1.0.1
+  assetPath: Packages/com.solacevision.assistant/CHANGELOG.md
+  uploadId: 603896
